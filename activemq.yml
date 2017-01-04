@@ -1,0 +1,10 @@
+version: '2'
+services:
+  activemq:
+    container_name: activemq
+    hostname: activemq
+    image: njmittet/alpine-activemq
+    ports:
+      - "61616:61616"
+      - "8161:8161"
+    restart: always

@@ -1,0 +1,14 @@
+version: '2'
+services:
+  postgresql:
+    container_name: postgresql
+    hostname: postgresql
+    image: onjin/alpine-postgres
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: database
+    hostname: postgresql
+    ports:
+      - "5432:5432"
+    restart: always

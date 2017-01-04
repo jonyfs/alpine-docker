@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mongodb:
+    container_name: mongodb1
+    command: /usr/bin/mongod --journal --smallfiles --rest
+    hostname: mongodb1
+    image: mvertes/alpine-mongo
+    ports:
+      - "27017:27017"
+      - "28017:28017"
+    restart: always
